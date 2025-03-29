@@ -235,8 +235,8 @@ impl Memory {
 
 impl Drop for Memory {
     fn drop(&mut self) {
-        let layout = Layout::array::<u8>(128).unwrap();
-        unsafe { alloc::dealloc(self.memory, layout) };
+        let layout = Layout::array::<u8>(self.size).unwrap();
+        unsafe { alloc::dealloc(self.memory, layout); }
     }
 }
 

@@ -27,3 +27,7 @@ $ cargo run -- <path-to-brainf*ck-file>
 ## License
 
 Check [LICENSE](LICENSE).
+
+## Contributing
+
+Contributions are welcome. Check out [FUTURE](FUTURE.md) to see what the future plans are for this project.
